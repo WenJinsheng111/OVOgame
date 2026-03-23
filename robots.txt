@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /images/games/
 
-Sitemap: https://ovounblocked.com/sitemap.xml
+Sitemap: https://ovogame.games/sitemap.xml
