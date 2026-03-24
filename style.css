@@ -124,15 +124,15 @@ a:hover {
 /* === Hero === */
 .hero {
   text-align: center;
-  padding: 64px 0 48px;
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  padding: 24px 0 20px;
+  background: var(--bg-secondary);
 }
 
 .hero h1 {
-  font-size: 2.25rem;
+  font-size: 1.6rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -140,10 +140,10 @@ a:hover {
 }
 
 .hero-tagline {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   max-width: 640px;
-  margin: 0 auto 28px;
+  margin: 0 auto;
 }
 
 /* === Buttons === */
