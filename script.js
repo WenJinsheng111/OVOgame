@@ -174,6 +174,13 @@
     });
   }
 
+  /* === Prevent Arrow Keys from Scrolling Page (affects gameplay) === */
+  document.addEventListener("keydown", function (e) {
+    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].indexOf(e.key) > -1) {
+      e.preventDefault();
+    }
+  });
+
   /* === Smooth Scroll for Anchor Links === */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {

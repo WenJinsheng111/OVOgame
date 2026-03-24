@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /images/games/
 
-Sitemap: https://ovogame.games/sitemap.xml
+Sitemap: https://www.ovogame.games/sitemap.xml
