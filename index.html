@@ -26,7 +26,10 @@
 
   <!-- Preconnect to game source -->
   <link rel="preconnect" href="https://dedragames.com">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/images/favicon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 
   <!-- Umami Analytics -->
@@ -174,8 +177,8 @@
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#play">Play</a>
+        <a href="#more-games">More Games</a>
         <a href="#how-to-play">How to Play</a>
-        <a href="#tips">Tips</a>
         <a href="#faq">FAQ</a>
       </nav>
     </div>
@@ -193,42 +196,113 @@
 
     <!-- GAME EMBED SECTION -->
     <section class="game-section" id="play">
-      <div class="container">
-        <h2>Play OvO Game Online Free</h2>
-        <div class="game-tabs">
-          <button class="game-tab active" data-game="ovo" id="tab-ovo">OvO</button>
-          <button class="game-tab" data-game="ovo2" id="tab-ovo2">OvO 2 <span class="tab-badge">NEW</span></button>
-        </div>
-        <div class="game-wrapper">
-          <div class="game-container" id="game-container">
-            <iframe
-              id="game-frame"
-              src="about:blank"
-              data-src="https://dedragames.com/games/ovo/1.4.5/"
-              data-fallback-1="https://ovo.game-files.crazygames.com/ovo/10/index.html"
-              data-fallback-2="https://ovo-game.github.io/"
-              data-ovo2-src="https://dedragames.com/games/ovo2/0.2alpha/"
-              title="OvO Unblocked Game"
-              width="800"
-              height="600"
-              allowfullscreen
-              sandbox="allow-scripts allow-same-origin allow-popups"
-            ></iframe>
-            <div class="game-overlay" id="game-overlay">
-              <button class="btn btn-play" id="start-game-btn" aria-label="Start OvO Game">
-                <span class="play-icon">&#9654;</span>
-                <span>Click to Play OvO</span>
-              </button>
+      <div class="game-layout">
+        <div class="game-main">
+          <div class="game-tabs">
+            <button class="game-tab active" data-game="ovo" id="tab-ovo">OvO</button>
+            <button class="game-tab" data-game="ovo2" id="tab-ovo2">OvO 2 <span class="tab-badge">NEW</span></button>
+          </div>
+          <div class="game-wrapper">
+            <div class="game-container" id="game-container">
+              <iframe
+                id="game-frame"
+                src="about:blank"
+                data-src="https://dedragames.com/games/ovo/1.4.5/"
+                data-fallback-1="https://ovo.game-files.crazygames.com/ovo/10/index.html"
+                data-fallback-2="https://ovo-game.github.io/"
+                data-ovo2-src="https://dedragames.com/games/ovo2/0.2alpha/"
+                title="OvO Unblocked Game"
+                width="800"
+                height="600"
+                allow="autoplay; fullscreen; accelerometer; gyroscope; gamepad"
+                allowfullscreen
+                playsinline
+                scrolling="no"
+              ></iframe>
+              <div class="game-overlay" id="game-overlay">
+                <button class="btn btn-play" id="start-game-btn" aria-label="Start OvO Game">
+                  <span class="play-icon">&#9654;</span>
+                  <span>Click to Play OvO</span>
+                </button>
+              </div>
             </div>
+            <div class="game-toolbar">
+              <button class="btn btn-icon" id="fullscreen-btn" aria-label="Toggle fullscreen" title="Fullscreen">
+                <span>&#x26F6;</span> Fullscreen
+              </button>
+              <button class="btn btn-icon hidden" id="back-to-ovo">&#8592; Back to OvO</button>
+              <span class="game-info">Works on Chromebook, Windows, Mac, iPad &amp; Android</span>
+            </div>
+            <h2 id="game-title">Play OvO Game Online Free</h2>
+            <p class="game-fallback">Game not loading? <a href="https://dedragames.com/games/ovo/1.4.5/" target="_blank" rel="noopener">Try playing directly</a> or <button class="link-btn" id="try-fallback-btn">try an alternate source</button>.</p>
           </div>
-          <div class="game-toolbar">
-            <button class="btn btn-icon" id="fullscreen-btn" aria-label="Toggle fullscreen" title="Fullscreen">
-              <span>&#x26F6;</span> Fullscreen
-            </button>
-            <span class="game-info">Works on Chromebook, Windows, Mac, iPad &amp; Android</span>
-          </div>
-          <p class="game-fallback">Game not loading? <a href="https://dedragames.com/games/ovo/1.4.5/" target="_blank" rel="noopener">Try playing directly</a> or <button class="link-btn" id="try-fallback-btn">try an alternate source</button>.</p>
         </div>
+
+        <aside class="game-sidebar" id="more-games">
+          <h3 class="sidebar-title">More Games</h3>
+          <div class="sidebar-games" id="games-grid">
+            <a href="#play" class="game-card" data-game-src="https://games.crazygames.com/en_US/boxing-random/index.html" data-game-title="Boxing Random">
+              <div class="game-card-thumb"><img src="/images/games/boxing-random.jpg" alt="Boxing Random" loading="lazy"></div>
+              <h3>Boxing Random</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/Getaway_Shootout/index.html" data-game-title="Getaway Shootout">
+              <div class="game-card-thumb"><img src="/images/games/getaway-shootout.jpg" alt="Getaway Shootout" loading="lazy"></div>
+              <h3>Getaway Shootout</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/Rooftop_Snipers/index.html" data-game-title="Rooftop Snipers">
+              <div class="game-card-thumb"><img src="/images/games/rooftop-snipers.jpg" alt="Rooftop Snipers" loading="lazy"></div>
+              <h3>Rooftop Snipers</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/o1/House_of_Hazards/index.html" data-game-title="House of Hazards">
+              <div class="game-card-thumb"><img src="/images/games/house-of-hazards.jpg" alt="House of Hazards" loading="lazy"></div>
+              <h3>House of Hazards</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/G-Switch_3/index.html" data-game-title="G-Switch 3">
+              <div class="game-card-thumb"><img src="/images/games/g-switch-3.jpg" alt="G-Switch 3" loading="lazy"></div>
+              <h3>G-Switch 3</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/o4/Get_on_Top/index.html" data-game-title="Get on Top">
+              <div class="game-card-thumb"><img src="/images/games/get-on-top.jpg" alt="Get on Top" loading="lazy"></div>
+              <h3>Get on Top</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/g1/geometry-vibes-v11/index.html" data-game-title="Geometry Vibes">
+              <div class="game-card-thumb"><img src="/images/games/geometry-vibes.jpg" alt="Geometry Vibes" loading="lazy"></div>
+              <h3>Geometry Vibes</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/g1/wave-road-3d-v7/index.html" data-game-title="Wave Road 3D">
+              <div class="game-card-thumb"><img src="/images/games/wave-road-3d.jpg" alt="Wave Road 3D" loading="lazy"></div>
+              <h3>Wave Road 3D</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/g1/brainrot-mega-parkour-v3/index.html" data-game-title="Brainrot Mega Parkour">
+              <div class="game-card-thumb"><img src="/images/games/brainrot-mega-parkour.jpg" alt="Brainrot Mega Parkour" loading="lazy"></div>
+              <h3>Brainrot Mega Parkour</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/g1/ninja-obby-parkour-v1/index.html" data-game-title="Ninja Obby Parkour">
+              <div class="game-card-thumb"><img src="/images/games/ninja-obby-parkour.jpg" alt="Ninja Obby Parkour" loading="lazy"></div>
+              <h3>Ninja Obby Parkour</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/TrickShotArena/index.html" data-game-title="Trickshot Arena">
+              <div class="game-card-thumb"><img src="/images/games/trickshot-arena.jpg" alt="Trickshot Arena" loading="lazy"></div>
+              <h3>Trickshot Arena</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/g1/escape-school-duel-v5/index.html" data-game-title="Escape School Duel">
+              <div class="game-card-thumb"><img src="/images/games/escape-school-duel.jpg" alt="Escape School Duel" loading="lazy"></div>
+              <h3>Escape School Duel</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/Basket_Random/index.html" data-game-title="Basket Random">
+              <div class="game-card-thumb"><img src="/images/games/basket-random.jpg" alt="Basket Random" loading="lazy"></div>
+              <h3>Basket Random</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/Soccer_Random/index.html" data-game-title="Soccer Random">
+              <div class="game-card-thumb"><img src="/images/games/soccer-random.jpg" alt="Soccer Random" loading="lazy"></div>
+              <h3>Soccer Random</h3>
+            </a>
+            <a href="#play" class="game-card" data-game-src="https://files.twoplayergames.org/files/games/other/Happy_Stack/index.html" data-game-title="Happy Stack">
+              <div class="game-card-thumb"><img src="/images/games/happy-stack.jpg" alt="Happy Stack" loading="lazy"></div>
+              <h3>Happy Stack</h3>
+            </a>
+          </div>
+        </aside>
       </div>
     </section>
 
