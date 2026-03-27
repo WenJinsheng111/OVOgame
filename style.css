@@ -840,3 +840,124 @@ a:hover {
     font-size: 1rem;
   }
 }
+
+/* ============================================
+   Extended Styles - Multi-Page Portal
+   ============================================ */
+
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.breadcrumbs a { color: var(--text-secondary); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .separator { margin: 0 8px; color: var(--border-color); }
+.breadcrumbs .current { color: var(--text-primary); }
+
+/* --- Dropdown Nav --- */
+.nav-dropdown { position: relative; }
+.dropdown-trigger { cursor: pointer; }
+.dropdown-trigger::after { content: ' \25BE'; font-size: 0.7em; }
+.dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+  padding: 8px 0; min-width: 200px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); z-index: 999; list-style: none;
+}
+.dropdown-menu li a {
+  display: block; padding: 10px 20px; color: var(--text-secondary); font-size: 0.9rem; transition: background 0.15s, color 0.15s;
+}
+.dropdown-menu li a:hover { background: var(--bg-hover); color: var(--text-primary); }
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu,
+.nav-dropdown.open .dropdown-menu { display: block; }
+
+/* --- Left Category Sidebar --- */
+.left-sidebar { width: 180px; flex-shrink: 0; }
+.left-sidebar .sidebar-title { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+.sidebar-categories { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.sidebar-categories li a {
+  display: block; padding: 9px 12px; color: var(--text-secondary); font-size: 0.87rem; border-radius: var(--radius-sm); transition: background 0.15s, color 0.15s;
+}
+.sidebar-categories li a:hover,
+.sidebar-categories li a.active { background: var(--bg-hover); color: var(--text-primary); }
+
+/* --- Game Description Sections (Inner Pages) --- */
+.game-description, .game-how-to-play, .game-tips-section { padding: 48px 0; }
+.game-description.alt-bg, .game-how-to-play.alt-bg { background: var(--bg-secondary); }
+.game-description .container p, .game-how-to-play .container p { margin-bottom: 16px; line-height: 1.8; }
+.game-description .container h2, .game-how-to-play .container h2, .game-tips-section .container h2 {
+  font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; color: var(--text-primary);
+}
+.game-description .highlight-box {
+  background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 20px 24px; margin: 20px 0;
+}
+.game-description .highlight-box h3 { font-size: 1.05rem; margin-bottom: 12px; color: var(--accent); }
+.game-description .highlight-box ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.game-description .highlight-box li { padding: 6px 0; font-size: 0.95rem; }
+
+/* --- Similar Games Section --- */
+.similar-games-section { padding: 48px 0; background: var(--bg-secondary); }
+.similar-games-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; }
+.similar-games-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.similar-games-grid .game-card h3 { font-size: 0.82rem; padding: 8px 6px; }
+
+/* --- Category Page Styles --- */
+.category-hero { padding: 40px 0 20px; }
+.category-hero h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; }
+.category-hero p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px; max-width: 800px; }
+.category-layout { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; display: flex; gap: 24px; }
+.category-main { flex: 1; min-width: 0; }
+.category-games-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.category-games-grid .game-card h3 { font-size: 0.82rem; padding: 8px 6px; }
+.category-sidebar { width: 240px; flex-shrink: 0; }
+
+/* --- Homepage Category Sections --- */
+.category-section { padding: 40px 0; }
+.category-section:nth-child(even) { background: var(--bg-secondary); }
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.section-header h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0; }
+.section-header .view-all { color: var(--accent); font-size: 0.9rem; font-weight: 600; white-space: nowrap; }
+.section-header .view-all:hover { color: var(--accent-hover); }
+.home-games-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.home-games-grid .game-card h3 { font-size: 0.78rem; padding: 6px 4px; }
+
+/* --- 4-Column Footer --- */
+.footer-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 32px; }
+.footer-grid-4 h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-primary); margin-bottom: 16px; }
+.footer-grid-4 ul { list-style: none; }
+.footer-grid-4 li { margin-bottom: 8px; }
+.footer-grid-4 a { color: var(--text-secondary); font-size: 0.88rem; }
+.footer-grid-4 a:hover { color: var(--text-primary); }
+.footer-about-text { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; }
+.footer-bottom-bar { border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; }
+.footer-bottom-bar p { color: var(--text-muted); font-size: 0.8rem; }
+
+/* --- Extended Responsive --- */
+@media (max-width: 960px) {
+  .left-sidebar { width: 100%; }
+  .left-sidebar .sidebar-categories { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .left-sidebar .sidebar-categories li a { padding: 6px 14px; font-size: 0.82rem; background: var(--bg-card); border: 1px solid var(--border-color); }
+  .similar-games-grid, .category-games-grid { grid-template-columns: repeat(3, 1fr); }
+  .category-layout { flex-direction: column; }
+  .category-sidebar { width: 100%; }
+  .home-games-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 768px) {
+  .footer-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .home-games-grid { grid-template-columns: repeat(3, 1fr); }
+  .game-description .highlight-box ul { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .dropdown-menu { position: static; transform: none; box-shadow: none; border: none; border-top: 1px solid var(--border-color); border-radius: 0; padding: 0; background: transparent; }
+  .nav-dropdown .dropdown-menu { display: none; }
+  .nav-dropdown.open .dropdown-menu { display: block; }
+  .similar-games-grid, .category-games-grid { grid-template-columns: repeat(2, 1fr); }
+  .home-games-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid-4 { grid-template-columns: 1fr; }
+  .breadcrumbs { padding: 8px 10px; font-size: 0.8rem; }
+  .category-hero h1 { font-size: 1.4rem; }
+}

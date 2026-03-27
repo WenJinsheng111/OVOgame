@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.ovogame.games/</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.ovogame.games/boxing-random</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url><loc>https://www.ovogame.games/</loc><lastmod>2026-03-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+    <!-- Category Pages -->
+    <url><loc>https://www.ovogame.games/games/platformer</loc><lastmod>2026-03-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.ovogame.games/games/action</loc><lastmod>2026-03-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.ovogame.games/games/sports</loc><lastmod>2026-03-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.ovogame.games/games/casual</loc><lastmod>2026-03-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+    <!-- Game Pages - Platformer -->
+    <url><loc>https://www.ovogame.games/g-switch-3</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/brainrot-mega-parkour</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/ninja-obby-parkour</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Game Pages - Action -->
+    <url><loc>https://www.ovogame.games/boxing-random</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/getaway-shootout</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/rooftop-snipers</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/house-of-hazards</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/escape-school-duel</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Game Pages - Sports & Physics -->
+    <url><loc>https://www.ovogame.games/basket-random</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/soccer-random</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/get-on-top</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/trickshot-arena</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Game Pages - Casual & Puzzle -->
+    <url><loc>https://www.ovogame.games/geometry-vibes</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/wave-road-3d</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.ovogame.games/happy-stack</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Legal -->
+    <url><loc>https://www.ovogame.games/privacy</loc><lastmod>2026-03-22</lastmod><changefreq>yearly</changefreq><priority>0.1</priority></url>
 </urlset>
